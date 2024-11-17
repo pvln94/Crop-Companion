@@ -1,0 +1,42 @@
+name: soil_type_predictor
+description: "A new Flutter project."
+publish_to: 'none' # Prevents the package from being accidentally published to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  tflite_flutter: ^0.11.0
+  flutter_tflite: ^1.0.1
+  image: ^3.3.0  # Downgraded to avoid version conflict
+  image_picker: ^0.8.5+3
+  path_provider: ^2.1.5
+  permission_handler: ^11.3.1
+  flutter_tesseract_ocr: ^0.4.28
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Add assets used in the app
+  assets:
+    - assets/soil_type_predictor_model.tflite
+    - assets/labels.txt
+
+  # Optionally add custom fonts or resolution-aware images
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
